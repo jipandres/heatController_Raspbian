@@ -37,7 +37,8 @@ It allows to configure policies to switch off the cauldron automatically when it
 
 # Platform
 
-Raspberry Pi (v1) with Raspbian Jessie installed and a WiFi dongle. Raspberry Pi v3 includes the WiFi.
+Raspberry Pi (v1) with Raspbian Jessie installed with network connectivity.
+If WiFi NIC/dongle is going to be used, [this information](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) may be useful.
 
 A single relay connected to GPIO.
 
@@ -49,4 +50,6 @@ Insert figure
 
 ## Architecture
 
+
+# Appendix
 
