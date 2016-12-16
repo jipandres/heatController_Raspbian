@@ -1,0 +1,21 @@
+@startuml
+
+left to right direction
+
+actor User
+actor Cauldron
+
+rectangle "Use Cases"{
+(get Status)
+(switch On)
+(switch Off)
+}
+
+User -> (get Status)
+User -> (switch On)
+User -> (switch Off)
+
+(switch On) -> Cauldron
+(switch Off) -> Cauldron
+
+@enduml
