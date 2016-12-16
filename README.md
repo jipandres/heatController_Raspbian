@@ -4,7 +4,7 @@ Project to control a relay that switchs on/off a cauldron remotely using a Raspb
 ## The Cauldron
 The cauldron must have support for a relay to switch on/off it.
 
-In my case, I want to control a Domusa BioClass NG (http://www.domusateknik.com/en/products/biomass-boiler/pellet-boilers/bioclass-hm)
+In my case, I want to control a [Domusa BioClass NG](http://www.domusateknik.com/en/products/biomass-boiler/pellet-boilers/bioclass-hm)
 
 # Use Cases
 
@@ -46,3 +46,7 @@ A set of LEDs to see the status.
 ## Wired connections figure
 
 Insert figure
+
+## Architecture
+
+
