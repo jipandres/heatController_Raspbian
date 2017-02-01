@@ -7,6 +7,8 @@ Each component is considered a subsystem that will be modeled independently.
 
 # Use Cases
 
+0. As a user, I must be able to download and install the package in a Raspbian.
+
 ## Check the status of the relay
 It must be possible to check remotely using a web page hosted in this system if the cauldron is on/off.
 
