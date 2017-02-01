@@ -20,3 +20,4 @@ GPIO.setmode(GPIO.BCM)
 #SDA        - 2
 
 Some information comes here: https://thepihut.com/blogs/raspberry-pi-tutorials/27968772-turning-on-an-led-with-your-raspberry-pis-gpio-pins
+The ribbon and the adapter board that I have https://www.amazon.es/gp/product/B00R76SGP6/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1
