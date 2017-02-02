@@ -1,20 +1,22 @@
-# Development Environment
+# Test Environment
 
+## Hardware
 It is composed of a Raspberry Pi 1 Model B connected to a proto board with a 26 specific ribbon.
 
 A single relay
 Leds
 Resistors
 
+<TODO: add picture>
 
-## GPIO schema
+### GPIO schema
 It can be found in the web, for example in https://thepihut.com/blogs/raspberry-pi-tutorials/27968772-turning-on-an-led-with-your-raspberry-pis-gpio-pins
 
-## The ribbon adapter
+### The ribbon adapter
 https://www.amazon.es/gp/product/B00R76SGP6/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1
 
 
-## Mapping between the name in the protoboard connector and the BCM GPIO PIN
+### Mapping between the name in the protoboard connector and the BCM GPIO PIN
 
 Assuming BCM GPIO mode 
 "GPIO.setmode(GPIO.BCM)"
