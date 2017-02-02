@@ -1,3 +1,18 @@
+# Mapping between the name in the protoboard connector and the BCM GPIO PIN
+Assuming BCM GPIO mode: GPIO.setmode(GPIO.BCM)
+|Protoboard description\nColumn 1|GPIO PIN |GPIO PIN | Protoboard description\nColumn 2| 
+| --- | --- | --- | --- |
+| CE1  |  7 | 17 | P0 | 
+| CE0  |  8 | 18 | P1 | 
+| SCLK | 11 | 27 | P2 | 
+| MISO |  9 | 22 | P3 | 
+| MOSI | 10 | 23 | P4 | 
+| RXD  | 15 | 24 | P5 | 
+| TXD  | 14 | 25 | P6 | 
+| SCL  | 3  |  4 | P7 |
+| SCA  | 2  | GND| GND|
+
+
 GPIO.setmode(GPIO.BCM)
 #Protoboard - GPIO PIN
 #P0         - 17
