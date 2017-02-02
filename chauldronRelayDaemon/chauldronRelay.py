@@ -1,3 +1,9 @@
+# TODO: Main program that receives as input parameters the GPIO port (BCM) and the configuration file (2nd step)
+#The program should be alive until the stop signal is received (not needed in the first phase but mandatory in the second in order to stop the chauldron during nights
+
+# The program could be handle by a start-stop-daemon if stop sends a signal to the program that allows to cleanup the GPIO pin
+
+
 ##cookbook
 
 try:
