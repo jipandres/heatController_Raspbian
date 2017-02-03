@@ -12,7 +12,7 @@ class GPIODriver(ChauldronRelayIf):
     GPIO.setmode(GPIO.BCM)
  
   def setup(self):
-    GPIO.setup(self.PIN,GPIO.OUTPUT)
+    GPIO.setup(self.PIN,GPIO.OUT)
 
   def start(self):
     GPIO.output(self.PIN,GPIO.HIGH)
@@ -21,7 +21,7 @@ class GPIODriver(ChauldronRelayIf):
     GPIO.output(self.PIN,GPIO.LOW)
  
   def release(self):
-    GPIO.cleanup()
+    GPIO.cleanup(self.PIN)
 
 
   
