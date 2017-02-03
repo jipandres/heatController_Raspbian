@@ -1,11 +1,30 @@
 # TODO: Main program that receives as input parameters the GPIO port (BCM) and the configuration file (2nd step)
 #The program should be alive until the stop signal is received (not needed in the first phase but mandatory in the second in order to stop the chauldron during nights
+SIGTERM (by default) is received in that case 
 
 # The program could be handle by a start-stop-daemon if stop sends a signal to the program that allows to cleanup the GPIO pin
 
 
 ##cookbook
 
+## Signal handling
+
+import signal, os
+
+def handler(signum, frame):
+    print 'Signal handler called with signal', signum
+    raise IOError("Couldn't open device!")
+
+# Set the signal handler and a 5-second alarm
+signal.signal(signal.SIGALRM, handler)
+signal.alarm(5)
+
+# This open() may hang indefinitely
+fd = os.open('/dev/ttyS0', os.O_RDWR)
+
+signal.alarm(0)          # Disable the alarm
+
+##-----------------------
 try:
     import RPi.GPIO as GPIO
 except RuntimeError:
