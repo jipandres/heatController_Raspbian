@@ -5,9 +5,10 @@ except ImportError:
 
 
 class GPIODriver(ChauldronRelayIf):
-  PIN
+  PIN=0
 
-  def _init_(self,pin):
+  def _init_(self,pin=4):
+    """TODO: Check PIN values. Some of them are not allowed"""
     self.PIN = pin
     GPIO.setmode(GPIO.BCM)
  
