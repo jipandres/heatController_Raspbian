@@ -1,4 +1,7 @@
-import RPi.GPIO as GPIO
+try:
+  import RPi.GPIO as GPIO
+except ImportError:
+    raise ImportError('GPIO not available, please check installation procedure')
 
 
 class GPIODriver(ChauldronRelayIf):
