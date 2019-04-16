@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<title> {{ name }} </title>
+<link rel="stylesheet" href='../static/css/main.css'>
+</head>
+
+<body>
+<h1>{{ name }} homepage</h1>
+<h2>Estado de la casa</h2>
+<p>Hora del sistema: {{ time }}</p>
+<h3>Caldera</h3>
+<p>Estado: <b>{{ chauldron_status }} </b></p>
+<p>{% if chauldron_status == "on" %} 
+        <a href="./caldera/off" class="button">APAGAR</a>
+   {% elif chauldron_status == off %}
+        <a href="./caldera/on" class="button" type=button>ENCENDER</a>
+   {% else %}
+        No action. Unknown status
+   {% endif %}
+</p>
+<!-- Actions>
+<!--Poner un botón para encender la caldera -->
+<!--button id="chauldronOn" type="button">Encender Caldera</button> 
+-->
+</body>
